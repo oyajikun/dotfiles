@@ -2,7 +2,7 @@
 	name = oyajikun
 	email = oyajikun
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 	quotepath = false
 [merge]
 	tool = diff
