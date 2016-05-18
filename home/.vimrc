@@ -26,3 +26,4 @@ set virtualedit=block
 set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
+set clipboard+=unnamed
