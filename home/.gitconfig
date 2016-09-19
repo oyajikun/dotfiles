@@ -4,6 +4,9 @@
 [core]
 	editor = /usr/local/bin/vim
 	quotepath = false
+	pager = less -q -R
+[color]
+	ui = auto
 [merge]
 	tool = diff
 [init]
