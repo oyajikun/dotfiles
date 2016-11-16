@@ -65,12 +65,18 @@ call dein#add('Shougo/neocomplete.vim')
 " Required:
 call dein#end()
 
+"End dein Scripts-------------------------
+
 " Required:
 filetype plugin indent on
 
 " If you want to install not installed plugins on startup.
-if dein#check_install()
+if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------
+" launch NERDTree without specified file
+let file_name = expand('%')
+if has('vim_starting') &&  file_name == ''
+  autocmd VimEnter * NERDTree ./
+endif
