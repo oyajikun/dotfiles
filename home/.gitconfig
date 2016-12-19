@@ -4,11 +4,11 @@
 [core]
 	editor = /usr/local/bin/vim
 	quotepath = false
-	pager = less -q -R
+	pager = less -q -R -X
 [color]
 	ui = auto
 [merge]
-	tool = diff
+	tool = colordiff
 [init]
 	templatedir = ~/.git-templates/git-secrets
 [secrets]
